@@ -5,28 +5,89 @@
 }
 
 :root {
-    --grid-gap: 20px;
+    --grid-gap: 2rem;
     --margin: var(--grid-gap);
 }
 
 .outer-container {
 	display: grid;
 	grid-template-rows: auto auto auto;
-/*	margin: var(--margin);
-	height: calc(100vh - var(--margin) * 2);*/
-	/*grid-gap: var(--grid-gap);*/
+	width: 100%;
+	min-height: 300px;
 }
 
 header {
 	display: grid;
 	grid-template-columns: 65fr 35fr;
-	padding: 1rem 0;
+	padding: 1rem 1rem 0.5rem 1rem;
 }
 
 .header-about {
-	margin: 0 5rem 1rem 5rem;
+	display: flex;
+	flex-direction: column;
+	margin: 0 7rem 1rem 7rem;
 }
 
 .header-links {
-	margin: 0 5rem 1rem 5rem;	
+	display: flex;
+	flex-direction: column;
+}
+
+main {
+	margin: 3rem 8rem; 
+}
+
+.main-top {
+	display: grid;
+	grid-template-rows: 1fr auto 1fr;
+	grid-gap: calc(var(--grid-gap)/2);
+	margin: 0 15rem 3rem 15rem; 
+}
+
+.main-top-header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.main-top-text {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.main-top-buttons {
+	display: flex;
+	justify-content: center;
+}
+
+.main-top-button {
+	text-decoration: none;
+	margin: 0.1rem;
+	padding: 0.6rem;
+}
+
+.main-album-thumbnails {
+	display: grid;
+	grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+	grid-gap: var(--grid-gap);
+}
+
+.thumbnail {
+	display: grid;
+	grid-template-rows: auto auto;
+}
+
+.thumbnail-body {
+	display: grid;
+	grid-template-rows: 2fr 1fr;
+	padding: 1rem;
+	grid-gap: calc(var(--grid-gap)/2);
+}
+
+.thumbnail-bottom-row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }

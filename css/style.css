@@ -1,11 +1,15 @@
-/** {
-
-}*/
-
 header {
 	background-color: #404040;
 	color: white;
 	font-family: "Mukta Mahee", sans-serif;
+}
+
+.header-about-text {
+	color: #808080;
+}
+
+.header-links ul {
+	list-style-type: none;
 }
 
 .header-links a {
@@ -15,4 +19,71 @@ header {
 
 .header-links a:hover {
 	text-decoration: underline;
+}
+
+.main-top {
+	font-family: "Raleway", sans-serif;	
+}
+
+.main-top-header {
+	color: #333333;
+	font-weight: lighter;
+}
+
+.main-top-text {
+	color: #808080;
+	font-weight: lighter;
+	line-height: 2;
+	font-size: 1.15em;
+}
+
+.call-to-action-button {
+	color: white;
+	background-color: #0066ff;
+}
+
+.secondary-action-button {
+	color: white;
+	background-color: #808080;
+}
+
+.call-to-action-button:hover {
+	background-color: #0052cc;
+}
+
+.secondary-action-button:hover {
+	background-color: #666666;
+}
+
+.thumbnail {
+	background-color: white;
+	border-style: solid;
+	border-width: thin;
+	border-color: lightgray;
+	font-family: "Lato", sans-serif;
+}
+
+.thumbnail-text {
+	color: #333333;
+	font-weight: lighter;
+	line-height: 1.5;
+}
+
+.thumbnail-bottom-row {
+	color: #808080;
+}
+
+.thumbnail-button {
+	background-color: white;
+	border-style: solid;
+	border-width: thin;
+	border-color: darkgray;
+	padding: 0.5em;
+	font-family: "Lato", sans-serif;
+	color: #808080;
+}
+
+.thumbnail-button:hover {
+	color: white;
+	background-color: #808080;
 }
